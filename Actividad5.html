@@ -1,28 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario en html 5 - tecsup</title>
+    <title>ACTIVIDAD</title>
+
+    <link rel="stylesheet" href="Estilos.CSS">
 </head>
+
 <body>
-    <h1>Nuevas Caracteristicas de html 5 - Diseño Web</h1>
-    <form id="form-order">
-        <p>
-        <label for="name"> Nombre(Obligatorio)</label>
-        <input type="text" name="name" id="name"
-        placeholder="Juan Leon"
-        autofocus
-        autocomplete
-        required>
-    </form>
-    </p>
-    <p>
-        <label for="password">Clave (Obligatorio)</label>
-        <input type="text" name="password" id="password"
-        placeholder="Ingresar Clave"
-        patterm="[a-z]{3}[9-0]{4}"
-        required>(la contraseña 3 letras y 4 numeros en ese orden)
+
+    <div>
+    <h1>Travel Autorization Form</h1>
+    </div>
+
+    <h2>Sección A: Ingormación del cliente</h2>
+    <hr>
+
+
+    <p id="p1">
+        <label for="name">Cargo:</label>
+        <input type="text" name="name" id="name">
     </p>
 
+    <p>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name">
+    </p>
+
+    <p>
+        <label for="name">Primer Apellido:</label>
+        <input type="text" name="name" id="name">
+    </p>
+
+    <p>
+        <label for="name">Segundo Apellido:</label>
+        <input type="text" name="name" id="name">
+    </p>
+
+    <p>
+        <label for="email">Correo electrónico:</label>
+        <input type="text" name="name" id="email">
+    </p>
+
+    <p>
+        <label for="number">Número de teléfono:</label>
+        <input type="text" name="teléfono" id="teléfono">
+    </p>
+
+    <h2>Sección B: Información del viaje</h2>
+    <hr>
+
+        <p>
+            <label for="sel">Nombre de la aerolinea:</label>
+            <select name="seleccion" id="sel">
+                <option value="selecciona">Selecciona una aerolinea</option>
+                <option value="ATSA">ATSA</option>
+                <option value="VIVA-AIR">VIVA-AIR</option>
+                <option value="STAR-PERU">STAR-PERU</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="dest">Destino:</label>
+            <input type="text" name="destino" id="dest">
+        </p>
+
+        <p>
+            <label for="Fecha Sa">Fecha de Salida:</label>
+            <input type="date" value="">
+        </p>
+
+        <p>
+            <label for="Fecha Re">Fecha de Regreso:</label>
+            <input type="date" value="">
+        </p>
+
+        <p>
+            <label for="Cost Est">Coste estimado:</label>
+            <input type="text" name="Coste" id="Cost Est">
+        </p>
+
+        <p>
+            <label for="Incluye">¿Incluye la visita al cliente?</label>
+            <input type="checkbox" name="Incluye" value="">
+        </p>
+
+        <p>Gastos Adicionales estimados</p>
+
+        <p>
+            <label for="Alquiler">Alquiler de coche</label>
+            <input type="text" name="Alquiler" id="Alquiler">
+        </p>
+
+        <p>
+            <label for="Hotel">Hotel</label>
+            <input type="text" name="Hotel" id="Hotel">
+        </p>
+        
+        <p>
+            <label for="Comidas">Comidas</label>
+            <input type="text" name="Hotel" id="Hotel">
+        </p>
+        
+        <p>
+            <label for="Total">Total estimado</label>
+            <input type="text" name="Total" id="Total" 
+            placeholder="0,00€">
+        </p>
+
+        <p>Metodos de pago utilizado:
+            <p><label><input type="radio" name="Metodo" value="Metálico" checked="">Metálico</label></p>
+            <p><label><input type="radio" name="Metodo" value="Tarjeta">Tarjeta de crédito</label></p>
+            <p><label><input type="radio" name="Metodo" value="Cheque">Cheque</label></p>
+        </p>
+
+        <p>
+            <label for="caja">Proposito del viaje:</label><br/>
+            <textarea id="caja" name="caja"></textarea>
+        </p>
+
+        <p>
+            <button>Enviar</button>
+        </p>
 </body>
-</html>
+</html
